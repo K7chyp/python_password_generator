@@ -15,7 +15,6 @@ class Generator:
         return symbol_lst
 
     def generate_pass(self):
-
         symbol_lst = self.preprocessing()
         password = []
 
@@ -26,7 +25,6 @@ class Generator:
 
     def make_pass_list(self):
         pass_list = []
-
         for iter in range(100):
             some_pass = self.generate_pass()
             pass_list.append(sample(some_pass, len(some_pass)))
@@ -62,7 +60,6 @@ class Generator:
         return hash_pass
 
     def post_processing(self):
-
         pass_ = list(self.hash_it())
         true_pass = []
 
